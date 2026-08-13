@@ -32,12 +32,26 @@ Antwortet eines davon mit „ist nicht als Befehl erkannt", fehlt es noch.
 
 ## 2. Setup starten
 
+### Der kurze Weg: Claude machen lassen
+
+Wer Claude Code schon nutzt, kopiert **diese eine Zeile** in eine Session:
+
+```
+Installiere mir den Simpli AI Hub auf diesem Windows-Rechner: lade das neueste Release aus dem öffentlichen Repo restriden/simpli-ai-hub-releases herunter (gh release download --repo restriden/simpli-ai-hub-releases --pattern "SimpliAIHub-Setup-*.exe"), führe die Datei still mit dem Schalter /S aus und prüfe danach, dass die Verknüpfung "Simpli AI Hub" auf dem Desktop liegt — sag mir Bescheid, wenn es fertig ist.
+```
+
+Es muss **eine einzige Zeile** bleiben: jeder Umbruch wäre in Claude Code ein
+Enter, und der Auftrag ginge halb fertig ab.
+
+Claude lädt dann das Release (rund 108 MB) und installiert es still. Fertig ist
+es, sobald die Verknüpfung **Simpli AI Hub** auf dem Desktop liegt.
+
+### Der Weg von Hand
+
 Den Installer gibt es unter
 [**Releases**](https://github.com/restriden/simpli-ai-hub-releases/releases/latest)
-— dort die Datei `SimpliAIHub-Setup-….exe` herunterladen (rund 600 MB, der
-größte Teil davon ist das Sprachmodell fürs Diktat).
-
-Danach Doppelklick auf die heruntergeladene Datei.
+— dort die Datei `SimpliAIHub-Setup-….exe` herunterladen (rund 108 MB) und
+doppelt anklicken.
 
 Windows zeigt dabei einmalig ein blaues Fenster:
 „Der Computer wurde durch Windows geschützt".
@@ -122,3 +136,4 @@ Zum Zurücksetzen den Hub schließen, die jeweilige Datei löschen und neu start
 | Projekt-Liste bleibt leer | im Dialog auf **⟳ Neu laden** klicken |
 | Monday-Aufgaben leer | dafür braucht es einen Monday-Zugang — bei Tim melden |
 | Diktat reagiert nicht | Windows muss dem Hub das Mikrofon erlauben (Einstellungen → Datenschutz → Mikrofon) |
+| Mikrofon-Knopf bleibt grau | Beim **ersten** Diktat lädt der Hub einmalig das Sprachmodell (548 MB) nach. Der Fortschritt steht im Fenstertitel; danach ist es dauerhaft da und übersteht auch Updates |
