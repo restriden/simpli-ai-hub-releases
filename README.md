@@ -34,10 +34,10 @@ Antwortet eines davon mit „ist nicht als Befehl erkannt", fehlt es noch.
 
 Den Installer gibt es unter
 [**Releases**](https://github.com/restriden/simpli-ai-hub-releases/releases/latest)
-— dort die Datei `SimpliAIHub-Setup-1.0.0.exe` herunterladen (rund 600 MB, der
+— dort die Datei `SimpliAIHub-Setup-….exe` herunterladen (rund 600 MB, der
 größte Teil davon ist das Sprachmodell fürs Diktat).
 
-Danach Doppelklick auf **SimpliAIHub-Setup-1.0.0.exe**.
+Danach Doppelklick auf die heruntergeladene Datei.
 
 Windows zeigt dabei einmalig ein blaues Fenster:
 „Der Computer wurde durch Windows geschützt".
@@ -95,6 +95,13 @@ Ein vorhandener Ordner wird nur geöffnet, nie überschrieben.
 - `Strg` + `Shift` + `Leertaste` — Diktat, spricht statt tippt
 - Doppelklick auf den Reiternamen benennt ihn um
 - Leuchtet ein Reiter gelb, ist Claude dort fertig und wartet
+
+## Updates
+
+Gibt es eine neue Fassung, erscheint oben rechts im Hub ein orangener Knopf
+**„Update x.y.z"**. Ein Klick zeigt, was die Version bringt — geladen und
+installiert wird erst auf Zuruf. Wer gerade mitten in einer Session steckt,
+klickt einfach auf **„Später"**; der Knopf bleibt.
 
 ## Wo liegen die Einstellungen?
 
